@@ -1,3 +1,4 @@
 class AppRoutes {
-  static const PRODUCT_DATAILS = '/product-datails';
+  static const productDetail = '/product-detail';
 }
+
