@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/components/product_item.dart';
+import 'package:shop/components/product_grid_item.dart';
 import 'package:shop/models/product_list.dart';
 import 'package:shop/models/products.dart';
 
@@ -21,7 +21,7 @@ class ProductGrid extends StatelessWidget {
       //forma de contrução total do grid de produtos
       itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
         value: loadedProducts[i],
-        child: ProductItem(),
+        child: ProducGridtItem(),
       ),
       //essa classe define uma estrutura de gridview com 2 elementos por linha
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

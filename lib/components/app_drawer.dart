@@ -11,6 +11,7 @@ class AppDrawer extends StatelessWidget {
         children: [
           AppBar(
             title: Text('Bem vindo Usuário'),
+            automaticallyImplyLeading: false,
           ),
           Divider(),
           ListTile(
@@ -22,10 +23,10 @@ class AppDrawer extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.shop),
-            title: Text('Loja'),
+            leading: Icon(Icons.payment),
+            title: Text('Pedidos'),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed(AppRoutes.home,);
+              Navigator.of(context).pushReplacementNamed(AppRoutes.orders,);
             },
           )
         ],
